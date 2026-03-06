@@ -10,7 +10,9 @@ let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 //clean up
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
-
+pins.digitalWritePin(DigitalPin.P13, 0)
+pins.digitalWritePin(DigitalPin.P14, 0)
+pins.digitalWritePin(DigitalPin.P15, 0)
 //input
 input.onButtonPressed(Button.A, function() {
 
