@@ -1,8 +1,80 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2026 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Junyoung
+ * Created on: Sep 2026
+ * This program shows 7 colors.
 */
+//Value
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 
-basic.showString('Hello, World!')
+//clean up
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+//input
+input.onButtonPressed(Button.A, function() {
+
+//Show red        
+    basic.clearScreen()
+    basic.showString('Red')
+    pins.digitalWritePin(DigitalPin.P13, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    
+//show Green    
+    basic.clearScreen()
+    basic.showString('Green')
+    pins.digitalWritePin(DigitalPin.P14, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    
+//Show Blue    
+    basic.clearScreen()
+    basic.showString('Blue')
+    pins.digitalWritePin(DigitalPin.P15, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P15, 0)
+    
+//Show Majent    
+    basic.clearScreen()
+    basic.showString('Majent')
+    pins.digitalWritePin(DigitalPin.P13, 1)
+    pins.digitalWritePin(DigitalPin.P15, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P15, 0)
+    
+//Show Cyan    
+    basic.clearScreen()
+    basic.showString('Cyan')
+    pins.digitalWritePin(DigitalPin.P14, 1)
+    pins.digitalWritePin(DigitalPin.P15, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    pins.digitalWritePin(DigitalPin.P15, 0)
+    
+//Show Yellow    
+    basic.clearScreen()
+    basic.showString('Yellow')
+    pins.digitalWritePin(DigitalPin.P13, 1)
+    pins.digitalWritePin(DigitalPin.P14, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    
+//Show white    
+    basic.clearScreen()
+    basic.showString('White')
+    pins.digitalWritePin(DigitalPin.P13, 1)
+    pins.digitalWritePin(DigitalPin.P14, 1)
+    pins.digitalWritePin(DigitalPin.P15, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    pins.digitalWritePin(DigitalPin.P15, 0)
+    basic.clearScreen()
+    
+//Come back to start    
+    basic.showIcon(IconNames.Happy)
+})
+
