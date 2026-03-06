@@ -14,37 +14,29 @@ basic.showIcon(IconNames.Happy)
 //input
 input.onButtonPressed(Button.A, function() {
 
-//Show red        
+    
     basic.clearScreen()
     basic.showString('Red')
     pins.digitalWritePin(DigitalPin.P13, 1)
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P13, 0)
-    
-//show Green    
     basic.clearScreen()
     basic.showString('Green')
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.pause(1000)
-    pins.digitalWritePin(DigitalPin.P14, 0)
-    
-//Show Blue    
+    pins.digitalWritePin(DigitalPin.P14, 0)    
     basic.clearScreen()
     basic.showString('Blue')
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.pause(1000)
-    pins.digitalWritePin(DigitalPin.P15, 0)
-    
-//Show Majent    
+    pins.digitalWritePin(DigitalPin.P15, 0)  
     basic.clearScreen()
     basic.showString('Majent')
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P13, 0)
-    pins.digitalWritePin(DigitalPin.P15, 0)
-    
-//Show Cyan    
+    pins.digitalWritePin(DigitalPin.P15, 0) 
     basic.clearScreen()
     basic.showString('Cyan')
     pins.digitalWritePin(DigitalPin.P14, 1)
@@ -52,17 +44,13 @@ input.onButtonPressed(Button.A, function() {
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 0)
-    
-//Show Yellow    
     basic.clearScreen()
     basic.showString('Yellow')
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P13, 0)
-    pins.digitalWritePin(DigitalPin.P14, 0)
-    
-//Show white    
+    pins.digitalWritePin(DigitalPin.P14, 0)  
     basic.clearScreen()
     basic.showString('White')
     pins.digitalWritePin(DigitalPin.P13, 1)
