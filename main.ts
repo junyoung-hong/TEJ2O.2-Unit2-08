@@ -5,9 +5,6 @@
  * This program shows 7 colors.
 */
 
-// variables
-let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
-
 // clean up
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
