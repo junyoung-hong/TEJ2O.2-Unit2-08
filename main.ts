@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function() {
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P15, 0)
     
-    // majent  
+    // majent
     basic.clearScreen()
     basic.showString('Majent')
     pins.digitalWritePin(DigitalPin.P13, 1)
@@ -48,7 +48,7 @@ input.onButtonPressed(Button.A, function() {
     pins.digitalWritePin(DigitalPin.P13, 0)
     pins.digitalWritePin(DigitalPin.P15, 0)
     
-    // cyan 
+    // cyan
     basic.clearScreen()
     basic.showString('Cyan')
     pins.digitalWritePin(DigitalPin.P14, 1)
@@ -80,7 +80,7 @@ input.onButtonPressed(Button.A, function() {
     pins.digitalWritePin(DigitalPin.P15, 0)
     basic.clearScreen()
     
-    // come back to start    
+    // come back to start
     basic.showIcon(IconNames.Happy)
 })
 
